@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 563920167599417323}
   - component: {fileID: 6742828987139421719}
   m_Layer: 0
-  m_Name: npcBase
+  m_Name: _npcBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

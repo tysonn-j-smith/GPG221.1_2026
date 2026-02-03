@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 77100299}
   - component: {fileID: 77100298}
   - component: {fileID: 77100297}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 501858650}
   - component: {fileID: 501858649}
   - component: {fileID: 501858648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: _floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 974611039}
   - component: {fileID: 974611038}
   - component: {fileID: 974611037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 1228922553}
   - component: {fileID: 1228922552}
   - component: {fileID: 1228922551}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 1377106985}
   - component: {fileID: 1377106984}
   - component: {fileID: 1377106983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6066149a5bda95c43b1d5710d4c5f5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToSpawn: {fileID: 5247516457934004494, guid: f2311fe2b33780c4f837564a0287e500, type: 3}
+  objToSpawn: {fileID: 5247516457934004494, guid: 2b777ddd0318ae746913ce8dd766da77, type: 3}
   amountToSpawn: 50
 --- !u!1 &1721274866
 GameObject:

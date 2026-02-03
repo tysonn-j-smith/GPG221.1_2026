@@ -17,7 +17,7 @@ public class Wander : MonoBehaviour
         if(rb != null)
         {
             float turnDir = Random.Range(-turnAmount, turnAmount);
-            rb.AddTorque(0f, turnDir, 0f);
+            rb.AddRelativeTorque(0f, turnDir, 0f);
         }
     }
 }
