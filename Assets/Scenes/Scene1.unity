@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6066149a5bda95c43b1d5710d4c5f5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objToSpawn: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
+  objToSpawn: {fileID: 5247516457934004494, guid: f2311fe2b33780c4f837564a0287e500, type: 3}
   amountToSpawn: 50
 --- !u!1 &1721274866
 GameObject:
