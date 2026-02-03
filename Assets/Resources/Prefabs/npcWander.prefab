@@ -10,8 +10,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_Name
-      value: npcForward
+      value: npcWander
       objectReference: {fileID: 0}
+    - target: {fileID: 963477191822493389, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dec3acc437866384da66d4ac086382ae, type: 2}
     - target: {fileID: 1512042285991064901, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -80,7 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74d8f346ad7ea84e9140961666ab7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  minSpeed: 750
+  maxSpeed: 950
 --- !u!114 &-1791656678635935155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,4 +98,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c1510b1b8712447bef34a77c67f925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnAmount: 90
+  rotationAmount: 1250

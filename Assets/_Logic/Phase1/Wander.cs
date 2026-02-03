@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Wander : MonoBehaviour
 {
-    [Header("Settings")]
-    [SerializeField] private float turnAmount = 90f;
+    [Header("Rotation")]
+    [SerializeField] private float rotationAmount;
 
+    private float noiseFactor;
     private Rigidbody rb;
 
     private void Awake()
@@ -12,12 +13,16 @@ public class Wander : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        noiseFactor = Mathf.PerlinNoise1D(Time.time) * Random.Range(-rotationAmount, rotationAmount);
+    }
+
     private void FixedUpdate()
     {
         if(rb != null)
         {
-            float turnDir = Random.Range(-turnAmount, turnAmount);
-            rb.AddRelativeTorque(0f, turnDir, 0f);
+            rb.AddRelativeTorque(0f, noiseFactor, 0f);
         }
     }
 }
