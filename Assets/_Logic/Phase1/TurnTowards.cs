@@ -28,9 +28,13 @@ public class TurnTowards : MonoBehaviour
         {
             targetDir = (targetObj.transform.position - transform.position).normalized;
 
+            //NOTE: Just messing around at this point.
+            float targetAngle = Vector3.Angle(transform.forward, targetDir);
             float angle = Vector3.SignedAngle(transform.forward, targetDir, transform.up);
+            float torqueModifier = 1f - (targetAngle / 90f);
+            float torque = angle * torqueModifier * turnSpeed;
 
-            rb.AddRelativeTorque(0f, angle, 0f);
+            rb.AddRelativeTorque(0f, torque, 0f);
         }
     }
 }
