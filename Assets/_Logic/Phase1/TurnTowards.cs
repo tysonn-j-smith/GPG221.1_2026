@@ -25,13 +25,14 @@ public class TurnTowards : MonoBehaviour
     {
         Vector3 targetDir;
         if(targetObj)
-        {
+        { 
             targetDir = (targetObj.transform.position - transform.position).normalized;
 
             //NOTE: Just messing around at this point.
             float angle = Vector3.SignedAngle(transform.forward, targetDir, transform.up);
 
             rb.AddRelativeTorque(0f, angle, 0f);
+            Debug.DrawRay(transform.position, targetDir, Color.yellow, 0.01f);
         }
     }
 }

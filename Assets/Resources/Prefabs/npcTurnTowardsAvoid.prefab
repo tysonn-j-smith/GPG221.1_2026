@@ -14,20 +14,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_Name
-      value: npcAvoid
+      value: npcTurnTowardsAvoid
       objectReference: {fileID: 0}
     - target: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 963477191822493389, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c36797093ae1f4c44a37686943fecadf, type: 2}
+      objectReference: {fileID: 2100000, guid: 2540fe6298a9bb646b18179f4eb4d4c9, type: 2}
     - target: {fileID: 1512042285991064901, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -81,7 +77,10 @@ PrefabInstance:
       addedObject: {fileID: 2460371384213714498}
     - targetCorrespondingSourceObject: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3327308478053314028}
+      addedObject: {fileID: 4676245175185393493}
+    - targetCorrespondingSourceObject: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6997464038798780221}
   m_SourcePrefab: {fileID: 100100000, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
 --- !u!1 &5247516457934004494 stripped
 GameObject:
@@ -100,9 +99,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74d8f346ad7ea84e9140961666ab7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 1000
-  maxSpeed: 1500
---- !u!114 &3327308478053314028
+  minSpeed: 450
+  maxSpeed: 650
+--- !u!114 &4676245175185393493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5247516457934004494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edfe447711f2c9d40a8e46b76b0ea2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObj: {fileID: 0}
+  turnSpeed: 5000
+--- !u!114 &6997464038798780221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,10 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7953391b8493b5949a0708962413e72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 1500
+  turnSpeed: 2500
   rayCount: 12
-  rayAngle: 360
-  baseRayDis: 4
+  rayAngle: 120
+  baseRayDis: 5
   avoidMask:
     serializedVersion: 2
     m_Bits: 65
