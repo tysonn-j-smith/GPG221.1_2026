@@ -100,11 +100,12 @@ public class Avoid : MonoBehaviour
             float angle = -arc + step * i;
             Vector3 dir = Quaternion.AngleAxis(angle, transform.up) * transform.forward;
 
-            if (Physics.Raycast(transform.position, dir, out RaycastHit hit, currentRayDis, avoidMask))
+            if (Physics.Raycast(transform.position + new Vector3(0f, 1f, 0f), dir, out RaycastHit hit, currentRayDis, avoidMask))
             {
                 hitSomething = true;
                 hitData = hit;
                 rayColour = Color.red;
+                Debug.DrawRay(transform.position, hit.normal, Color.cyan);
                 break;
             }
         }

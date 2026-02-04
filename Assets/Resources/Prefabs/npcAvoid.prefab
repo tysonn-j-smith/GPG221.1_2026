@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 312382452164132737, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 963477191822493389, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -66,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6734693294155471364, guid: 718e7c1ebbf6c2546a1ab9fe04b5b90c, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -110,10 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7953391b8493b5949a0708962413e72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 250
-  rayCount: 12
-  rayAngle: 90
-  baseRayDis: 8
+  turnSpeed: 1500
+  rayCount: 6
+  rayAngle: 120
+  baseRayDis: 4
   avoidMask:
     serializedVersion: 2
-    m_Bits: 73
+    m_Bits: 65
